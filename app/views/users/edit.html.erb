@@ -1,11 +1,11 @@
-<% if @user.errors.any? %>
+    <% if @user.errors.any? %>
 <div class="notification is-danger">
-<h4><%= pluralize(@user.errors.count,"error") %> prohibited this product from being saved:</h4>
-<% @user.errors.full_messages.each do |message| %>
-<p><%= message %></p>
-<% end %>
+  <h4><%= pluralize(@user.errors.count,"error") %> prohibited this product from being saved:</h4>
+    <% @user.errors.full_messages.each do |message| %>
+      <p><%= message %></p>
+    <% end %>
 </div>
-<% end %>
+    <% end %>
 
   <div class="container">
     <div class="row">

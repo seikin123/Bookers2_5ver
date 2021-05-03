@@ -1,12 +1,12 @@
 <div class='container'>
   <div class='row'>
-      <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
       <h1>Editing Book</h1>
 
       <%= render 'books/error', model: @book %>
 
-      <table>
-            <%= form_with model:@book, local: true do |f| %>
+    <table>
+          <%= form_with model:@book, local: true do |f| %>
         <div class="form-group">
           <label>Title</label>
           <%= f.text_field :title, class:"form-control" %>
@@ -24,6 +24,6 @@
         <td class="show"><%= link_to "Show", book_path(@book.id) %></td>
         <td>|</td>
         <td class="back"><%= link_to "Back", books_path %></td>
-      </table>
+    </table>
   </div>
 </div>
