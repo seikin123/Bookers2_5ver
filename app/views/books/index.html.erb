@@ -1,10 +1,12 @@
+
 <div class='container px-5 px-sm-0'>
+<%= render 'books/error', model: @booknew %>
     <div class='row'>
         <div class='col-md-3'>
             <table class='table'>
                 <%= render 'users/profile', user: @user %>
             </table>
-                <%= render 'books/error', model: @booknew %>
+                
             <div>
                 <%= render 'books/form', {book: @booknew, btn: 'Create Book'} %>
             </div>
